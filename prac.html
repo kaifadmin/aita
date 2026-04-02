@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Output and Conclusion Log</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f9;
+        }
+
+        header {
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .practical-section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2980b9;
+            border-left: 5px solid #2980b9;
+            padding-left: 15px;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background-color: #282c34;
+            color:white;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .conclusion-text {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #27ae60;
+            margin-top: 15px;
+        }
+
+        code {
+            font-family: inherit;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Practical Output & Conclusion Log</h1>
+</header>
+
+<!-- Practical 1 -->
+<section class="practical-section">
+    <h2>Practical 1: DFS and BFS Implementation</h2>
+    <pre><code>DFS Traversal:
+A B D E F C 
+
+BFS Traversal:
+A B C D E F</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We successfully implemented Depth First Search (DFS) and Breadth First Search (BFS) using a dictionary-based graph. The results show that DFS explores the graph by going as deep as possible along each branch using recursion, while BFS explores the neighbor nodes first at each depth level using a queue-based approach.</p>
+    </div>
+</section>
+
+<!-- Practical 2 -->
+<section class="practical-section">
+    <h2>Practical 2: Uniform Cost Search and A* Search</h2>
+    <pre><code>Uniform Cost Search Result:
+Path: ['A', 'C', 'F']
+Total Cost: 7
+
+A* Search Result:
+Path: ['A', 'C', 'F']
+Total Cost: 7</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We implemented two informed search strategies. Both Uniform Cost Search (UCS) and A* Search successfully found the same optimal path from 'A' to 'F' with a total cost of 7. While UCS focused purely on the path cost, A* utilized a heuristic function to guide the search more efficiently toward the goal.</p>
+    </div>
+</section>
+
+<!-- Practical 3 -->
+<section class="practical-section">
+    <h2>Practical 3: Minimax Algorithm with Alpha-Beta Pruning</h2>
+    <pre><code>Minimax with Alpha-Beta Pruning Result:
+Optimal value for Maximizer: 5</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We implemented the Minimax algorithm for decision-making in a competitive game environment. By incorporating Alpha-Beta pruning, we demonstrated that the algorithm can determine the optimal value (5) for the maximizer while significantly reducing the number of nodes evaluated in the search tree.</p>
+    </div>
+</section>
+
+<!-- Practical 4 -->
+<section class="practical-section">
+    <h2>Practical 4: Rule Based Medical Expert System</h2>
+    <p class="note">(Example run assuming specific user inputs)</p>
+    <pre><code>===== Medical Expert System =====
+Do you have fever (yes/no)? yes
+Do you have cough (yes/no)? yes
+Do you feel difficulty in breathing (yes/no)? yes
+Do you have headache (yes/no)? no
+Do you have cold or sneezing (yes/no)? no
+
+Possible Disease: COVID / Lung Infection
+Advice: Get COVID test, wear mask, consult doctor immediately
+
+---- End of Expert System ----</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We developed a rule-based system that mimics the decision-making of a medical professional. The system effectively uses logical if-elif-else structures to analyze user-provided symptoms and provide a potential diagnosis and medical advice, demonstrating the utility of knowledge-based AI.</p>
+    </div>
+</section>
+
+<!-- Practical 5 -->
+<section class="practical-section">
+    <h2>Practical 5: Bayesian Reasoning</h2>
+    <p class="note">(Example calculation based on dataset and 'yes'/'yes' input)</p>
+    <pre><code>Do you have fever (yes/no)? yes
+Do you have cough (yes/no)? yes
+
+Bayesian Reasoning Result:
+Probability of Disease = Yes: 1.0
+Probability of Disease = No: 0.0
+Conclusion: Patient is likely to have the disease.</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>This practical demonstrates how to handle uncertainty in diagnosis using probability. By applying Bayes' Theorem to a dataset of symptoms and diseases, the system successfully calculates the posterior probability of a disease, proving that probabilistic reasoning is a robust tool for clinical prediction.</p>
+    </div>
+</section>
+
+<!-- Practical 6 -->
+<section class="practical-section">
+    <h2>Practical 6: Linear Regression</h2>
+    <pre><code>Linear Regression Model Results:
+Slope (m): 10.0
+Intercept (c): 0.0
+Mean Squared Error: 0.0
+R-squared Score: 1.0
+
+Predicted marks for 9 hours of study: 90.0</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We implemented a Linear Regression model to predict marks based on study hours. The model achieved a perfect R-squared score of 1.0 on the provided linear dataset, accurately predicting that 9 hours of study would result in 90 marks, illustrating the power of simple regression for continuous value prediction.</p>
+    </div>
+</section>
+
+<!-- Practical 7 -->
+<section class="practical-section">
+    <h2>Practical 7: Decision Tree and Naive Bayes Classification</h2>
+    <pre><code>Decision Tree Classifier Accuracy: 0.333
+Naive Bayes Classifier Accuracy: 0.333
+
+Prediction for new sample:
+Decision Tree Prediction: No
+Naive Bayes Prediction: No</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We compared two popular classification algorithms on a weather dataset. Both the Decision Tree and Naive Bayes models predicted that "Play" would be "No" for the new sample. This experiment shows how categorical data can be encoded and used to train different types of classifiers to predict discrete labels.</p>
+    </div>
+</section>
+
+<!-- Practical 8 -->
+<section class="practical-section">
+    <h2>Practical 8: Confusion Matrix and Performance Metrics</h2>
+    <pre><code>Confusion Matrix:
+[[4 1]
+ [1 4]]
+
+Performance Metrics:
+True Positives (TP): 4
+True Negatives (TN): 4
+False Positives (FP): 1
+False Negatives (FN): 1
+
+Precision: 0.8
+Recall: 0.8
+F1-Score: 0.8</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>Through this implementation, we learned that accuracy alone is not enough to evaluate a model. By using a Confusion Matrix, we calculated Precision, Recall, and F1-Score (all 0.8), providing a comprehensive view of the model's ability to minimize both false positives and false negatives.</p>
+    </div>
+</section>
+
+<!-- Practical 9 -->
+<section class="practical-section">
+    <h2>Practical 9: K-Means and Hierarchical Clustering</h2>
+    <pre><code>K-Means Clustering Result:
+   Feature1  Feature2  KMeans_Cluster
+0 -0.117448  9.347535               0
+1  5.404503  1.800949               1
+2  2.866105  0.643355               1
+3  4.707906  2.413475               1
+4 -1.162590  8.533440               0
+
+Silhouette Score (K-Means): 0.891
+
+Hierarchical Clustering Result:
+   Feature1  Feature2  KMeans_Cluster  Hierarchical_Cluster
+0 -0.117448  9.347535               0                     0
+...
+Silhouette Score (Hierarchical): 0.891</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We explored unsupervised learning by implementing K-Means and Hierarchical (Agglomerative) clustering. Both algorithms achieved a high Silhouette Score of 0.891, indicating that the synthetic data was clearly separated into distinct, well-defined clusters.</p>
+    </div>
+</section>
+
+<!-- Practical 10 -->
+<section class="practical-section">
+    <h2>Practical 10: Principal Component Analysis (PCA)</h2>
+    <pre><code>Original Dataset Shape: (150, 4)
+Reduced Dataset Shape: (150, 2)
+
+Explained Variance Ratio: [0.72962445 0.22850762]
+Total Variance Retained: 0.958
+
+First 5 rows of Reduced Dataset:
+   Principal_Component_1  Principal_Component_2
+0             -2.264703              0.480027
+1             -2.080961             -0.674134
+2             -2.364229             -0.341908
+3             -2.299384             -0.597395
+4             -2.389842              0.646835</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We successfully applied PCA to the 4-dimensional Iris dataset to reduce it to 2 dimensions. The results show that we can retain 95.8% of the original data's variance while significantly simplifying the dataset, which is crucial for data visualization and reducing computational complexity.</p>
+    </div>
+</section>
+
+<!-- Practical 11 -->
+<section class="practical-section">
+    <h2>Practical 11: Reinforcement Learning (Q-Learning)</h2>
+    <pre><code>Learned Optimal Path from Start to Goal:
+[(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (1, 4), (2, 4), (3, 4), (4, 4)]</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We implemented a Q-Learning agent that learns through interaction with a grid environment. Over 500 episodes, the agent learned to navigate from the start to the goal while avoiding obstacles and maximizing its reward, demonstrating the effectiveness of the Q-learning update formula.</p>
+    </div>
+</section>
+
+<!-- Practical 12 -->
+<section class="practical-section">
+    <h2>Practical 12: Perceptron Training (AND Gate)</h2>
+    <pre><code>Epoch 1
+...
+Epoch 10
+...
+Testing the trained perceptron:
+Input: [0 0], Predicted Output: 0, Actual Output: 0
+Input: [0 1], Predicted Output: 0, Actual Output: 0
+Input: [1 0], Predicted Output: 0, Actual Output: 0
+Input: [1 1], Predicted Output: 1, Actual Output: 1</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We built a single-layer Perceptron from scratch and trained it on an AND logic gate. The perceptron successfully updated its weights and bias over 10 epochs to perfectly classify the four input patterns, confirming that a basic neural unit can learn linearly separable functions.</p>
+    </div>
+</section>
+
+<!-- Practical 13 -->
+<section class="practical-section">
+    <h2>Practical 13: Neural Network Backpropagation (XOR Gate)</h2>
+    <pre><code>Final Predictions after Training:
+Input: [0 0], Predicted: 0, Actual: 0
+Input: [0 1], Predicted: 1, Actual: 1
+Input: [1 0], Predicted: 1, Actual: 1
+Input: [1 1], Predicted: 0, Actual: 0</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>Unlike a single-layer perceptron, this multi-layer neural network successfully learned the XOR gate logic. By using a hidden layer and the backpropagation algorithm with sigmoid activation, the network overcame the limitation of non-linear separability.</p>
+    </div>
+</section>
+
+<!-- Practical 14 -->
+<section class="practical-section">
+    <h2>Practical 14: Deep Learning - CNN (MNIST)</h2>
+    <pre><code>Epoch 1/5
+938/938 [==============================] - 14s 15ms/step - loss: 0.1521 - accuracy: 0.9534
+...
+Epoch 5/5
+938/938 [==============================] - 14s 15ms/step - loss: 0.0231 - accuracy: 0.9928
+
+Test Accuracy: 98.95 %</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We developed a Convolutional Neural Network (CNN) to classify handwritten digits. The model achieved an impressive test accuracy of 98.95%, demonstrating that convolution and pooling layers are highly effective at automatically extracting spatial features from image data.</p>
+    </div>
+</section>
+
+<!-- Practical 15 -->
+<section class="practical-section">
+    <h2>Practical 15: Deep Learning - LSTM (Text Prediction)</h2>
+    <pre><code>Epoch 1/200
+...
+Epoch 200/200
+1/1 [==============================] - 0s 2ms/step - loss: 0.0482 - accuracy: 1.0000
+
+Predicted Sentence:
+Artificial intelligence is the future</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We implemented a Long Short-Term Memory (LSTM) network for sequence modeling. By training on a sample text, the model learned the contextual relationships between words, allowing it to successfully predict and complete the sentence: "Artificial intelligence is the future."</p>
+    </div>
+</section>
+
+<!-- Practical 16 -->
+<section class="practical-section">
+    <h2>Practical 16: Simple Rule-Based Chatbot</h2>
+    <p class="note">(Example interaction)</p>
+    <pre><code>Chatbot: Hello! Type 'bye' to exit.
+You: hi
+Bot: Hi there! How can I assist you?
+You: how are you
+Bot: I'm just a program, but I'm functioning perfectly!
+You: bye
+Bot: Goodbye! Have a great day!</code></pre>
+    <div class="conclusion-text">
+        <h3>Conclusion</h3>
+        <p>We created a functional chatbot using pattern-matching rules. This experiment demonstrates the fundamentals of Natural Language Processing (NLP) where a program can maintain a basic conversation by mapping user input keywords to predefined responses in a dictionary.</p>
+    </div>
+</section>
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; padding: 20px 0;">
+    <a href="index.html" style="
+        all: initial;
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        cursor: pointer;
+        min-width: 200px;
+        box-sizing: border-box;
+    ">
+        Go to the Practicals
+    </a>
+</div>
+
+</body>
+</html>
